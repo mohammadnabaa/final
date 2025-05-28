@@ -1,0 +1,160 @@
+/* Base Body Styling */
+body {
+    background-color: #f87171; /* lighter red background */
+    color: #4b1a1a; /* dark red text */
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Table Styling */
+table {
+    width: 65%;
+    margin-top: 80px;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background-color: #fca5a5; /* very light red/pink */
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 16px 20px;
+    color: #7c2d2d; /* dark muted red */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+table th {
+    background-color: #f87171; /* medium light red */
+    color: #fff4f4;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+/* Vertical Divider */
+#cl1 {
+    background-color: #7c2d2d; /* darker red */
+    width: 6px;
+}
+
+/* Headings */
+h1, h3 {
+    color: #b91c1c; /* deeper red */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+}
+
+/* Links inside div h3 */
+div h3 a {
+    color: #d97706; /* goldenrod */
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+div h3 a:hover {
+    background-color: lightskyblue;
+    color: #b91c1c; /* deep red */
+    cursor: pointer;
+}
+
+/* Footer Section */
+#t {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    text-align: center;
+    color: #4b1a1a;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 220px;
+}
+
+#c {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    text-align: right;
+    color: #b45309; /* dark gold */
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Headings in footer divs */
+#hh {
+    color: #b45309; /* golden */
+    margin-bottom: 0;
+}
+
+div h4 {
+    color: #d97706; /* gold */
+    margin: 0;
+}
+
+div h4 a {
+    color: #4b1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 3px 6px;
+    border-radius: 6px;
+}
+
+div h4 a:hover {
+    background-color: lightskyblue;
+    color: #b91c1c;
+    cursor: pointer;
+}
+
+/* General Link Hover */
+a:hover {
+    background-color: lightskyblue;
+    color: #b91c1c;
+}
+
+/* Button Hover */
+.button:hover {
+    background-color: lightskyblue;
+    color: #b91c1c;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+    #t, #c {
+        position: static;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        background: transparent;
+        box-shadow: none;
+        color: #7c2d2d;
+    }
+}

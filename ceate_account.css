@@ -1,0 +1,118 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* Container for Form */
+div {
+    width: 60%;
+    margin: 80px auto;
+    background-color: #ffe5e5; /* Light red/pink background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Heading */
+h1, h3 {
+    color: #b71c1c;
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #880808;
+    margin-bottom: 8px;
+}
+
+/* Inputs & Selects */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #b71c1c;
+    outline: none;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    margin-right: 6px;
+    margin-left: 15px;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"],
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #b71c1c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    background-color: #7f0000;
+}
+
+/* Hyperlink Styling */
+a {
+    text-decoration: none;
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #7f0000;
+}
+
+/* Table Layout (if used) */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-spacing: 10px;
+}
+
+td {
+    vertical-align: top;
+    padding: 10px;
+}

@@ -1,0 +1,16 @@
+div h1 a{
+text-align-last: center;
+text-decoration: none;
+font-size: 240px;
+color: gold;
+}
+body{
+margin-top: 0%;
+text-align: center;
+  background: url("background.png" ) no-repeat center center fixed;
+background-size: cover;
+}
+a:hover {
+  background-color: red;
+  border-radius: 5%;
+}

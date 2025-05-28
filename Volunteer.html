@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Volunteer</title>
+	<link rel="stylesheet" type="text/css" href="volunteering.css">
+</head>
+<body>
+	<h1 id="g">Welcome to the volunteer feild!</h1> 
+	<form action="volunt.php" method="post">
+		<table align="center">
+			<caption id="capp">Register</caption>
+			<tr>
+				<td>Your full Name</td>
+				<td><input type="text" name="name" placeholder="your full name" required></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td>E-mail</td>
+				<td><input type="email" name="email" placeholder="Volunteer.###@gmail.com" required></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					<input type="radio" name="gender" value="m">Male
+					<input type="radio" name="gender" value="f">Female
+				</td>
+			</tr>
+			<tr>
+				<td>previous volunteer</td>
+				<td>
+					<input type="radio" name="previous" value="previous">Yes
+					<input type="radio" name="previous" value="previous">No
+				</td>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td><input type="number" name="age" min="16" max="26"></td>
+			</tr>
+			<tr>
+				<td>Nationality</td>
+				<td>
+					<select name="nationality" id="nas1">
+						<option value="Palestinian">Palestinian</option>
+						<option value="Lebanese">Lebanese</option>
+						<option value="Syrian">Syrian</option>
+						<option value="Jordanian">Jordanian</option>
+					</select>
+					Other<input type="text" name="other" size="10">
+				</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" name="address" required></td>
+			</tr>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" name="submit" value="registration"> <input type="reset" name="reset" value="clear"></td>
+				
+
+			</tr>
+
+		</table>
+	</form><br><br><br>
+
+	<div >
+<img class="mySlides" src="v1.png" height="200px" width="200px">
+<img class="mySlides" src="v2.png" height="200px" width="200px">
+<img class="mySlides" src="v3.png" height="200px" width="200px">
+<img class="mySlides" src="v4.png" height="200px" width="200px">
+<img class="mySlides" src="v5.png" height="200px" width="200px">
+<img class="mySlides" src="v4.png" height="200px" width="200px">
+</div>
+
+<script>
+var myIndex = 0;
+acc();
+
+function acc() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(acc, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+	<h2 id="g">For More Information Contuct Us <a href="About_Us.html" id="connect">Click Here</a></h2> <a href="home.php"><img src="hm.png" align="right" height="50px" width="50px" id="hm"></a> 
+
+</body>
+</html>

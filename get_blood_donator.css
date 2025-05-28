@@ -1,0 +1,60 @@
+/* Body Background */
+body {
+    background-color: #fff5f5; /* light red */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1f1f1f;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #b91c1c; /* deep red */
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+/* Table Styling */
+table {
+    text-align: center;
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+table th {
+    background-color: #b91c1c; /* deep red */
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+table td {
+    background-color: #fee2e2; /* light red background for cells */
+    padding: 12px;
+    border-bottom: 1px solid #fca5a5;
+    font-size: 16px;
+}
+
+table tr:hover td {
+    background-color: #fecaca; /* hover effect */
+}
+
+/* Info Box Styling */
+div {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    width: 400px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ef4444;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(239, 68, 68, 0.2);
+}

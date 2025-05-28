@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Donate_Blood</title>
+	<link rel="stylesheet" type="text/css" href="donate_blood.css">
+</head>
+<body>
+
+
+
+
+
+	<form action="donate_blood.php" method="post">
+		<table border="0" width="80%" >
+			<caption><h2>Donate</h2></caption>
+			
+			<tr>
+				<td id="d">Name</td>
+				<td><input type="text" name="name" id="name" required></td>
+				
+			</tr>
+			<tr>
+				<td id="d">Adress</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td id="d">Phone</td>
+				<td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td id="d">E-mail</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td id="d">Blood Group</td>
+				<td>
+					<select name="bloodgroup">
+						<option value="A+">A+</option>
+						<option value="A-">A-</option>
+						<option value="B+">B+</option>
+						<option value="B-">B-</option>
+						<option value="AB+">AB+</option>
+						<option value="AB-">AB-</option>
+						<option value="O+">O+</option>
+						<option value="O-">O-</option>
+					</select>
+				</td>
+
+			</tr>
+			<tr>
+				<td colspan="2" id="d"><input type="submit" name="submit" value="registration" onclick="test()" id="sub"> <input type="reset" name="reset" value="clear"></td>
+				
+
+			</tr>
+			
+		</table>
+	</form>
+		<a href="home.php"><img src="hm.png" align="right" height="50px" width="50px" id="hm"></a>
+	<script type="text/javascript">
+		
+function test(){
+
+
+
+
+	var fullname=document.getElementById("name").value;
+
+
+
+	alert ("note! \n"+fullname+" if you registred we will contact you As soon!");
+}
+
+	</script>
+	
+</body>
+</html>

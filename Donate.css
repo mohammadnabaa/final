@@ -1,0 +1,80 @@
+/* Base Styling */
+body {
+    background-color: #fff5f5; /* Light red background */
+    color: #1f1f1f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Section Cards */
+#donate,
+#ask,
+#volunteer,
+#assodon {
+    background-color: #fee2e2; /* Light red box */
+    border: 2px solid #ef4444; /* Red border */
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 850px;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#donate:hover,
+#ask:hover,
+#volunteer:hover,
+#assodon:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(239, 68, 68, 0.25);
+}
+
+/* Table Wrapper */
+#table {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headings */
+h1,
+h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #b91c1c; /* Strong deep red */
+    margin-bottom: 16px;
+}
+
+/* Highlighted Span Text */
+span {
+    color: #dc2626; /* Slightly darker red */
+    font-weight: bold;
+}
+
+/* Sub-text or note */
+#w {
+    color: #ef4444;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Optional: Responsive for smaller screens */
+@media (max-width: 600px) {
+    #donate,
+    #ask,
+    #volunteer,
+    #assodon {
+        margin: 20px 10px;
+        padding: 18px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.8rem;
+    }
+}

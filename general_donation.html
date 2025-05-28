@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>General Donation</title>
+	<link rel="stylesheet" type="text/css" href="general_donations.css">
+</head>
+<body>
+	
+	<h1 id="hh">Welcome To General Donation Feild</h1>
+	<table align="center">
+		<form action="general_donation.php" method="post">
+		<caption><strong>Registarion For Donation By filling this Form</strong></caption>
+		<tr>
+			<td rowspan="8" id="cl1"></td>
+			<td>Name</td>
+			<td><input type="text" name="name"></td>
+			<td rowspan="8" id="cl1"></td>
+		</tr>
+		<tr>
+			<td>Phone Number</td>
+			<td><input type="text" name="phone"></td>
+		</tr>
+		<tr>
+			<td>E-mail</td>
+			<td><input type="email" name="email"></td>
+		</tr>
+		<tr>
+			<td>Adress</td>
+			<td><input type="text" name="address"></td>
+		</tr>
+
+		<tr>
+			<td>Your Donation</td>
+			<td>
+				<select name="donation_type">
+						<option value="Mony">Money</option>
+						<option value="Clothing,shoes">Clothing,shoes</option>
+						<option value="Food">Food</option>
+						<option value="Items">Items</option>
+						<option value="Baggage">Baggage</option>
+						<option value="Other">Other</option>
+						
+					</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Onther Idea</td>
+			<td><textarea cols="35" rows="3" placeholder="Write here" name="idea"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2"><input type="submit" name="submit" value="Submit"> <input type="reset" name="reset" value="Clear"></td>
+			
+		</tr>
+
+	</form>
+	</table>
+	<div id="t"><h3>For the Association Donation open this slide and fill it<a href="Association_donation.html">Association Donation</a></h3></div><br>
+	
+	<a href="home.php"><img src="hm.png" align="right" height="50px" width="50px" id="hm"></a> 
+	<br>
+	<div id="c"><h4>For more information Contact Us <a href="About_Us.html">click here</a></h4></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ask for blood</title>
+	<link rel="stylesheet" type="text/css" href="ask_for_blood.css">
+</head>
+<body>
+	
+	<form action="ask_for_blood.php" method="POST">
+		<table align="center"  width="40%" id="tb1">
+			<tr>
+				<td id="cl1">Name</td>
+				<td id="inf"><input type="text" name="name"  id="name" placeholder="Your Full Name" ></td>
+			</tr>
+			<tr>
+				<td id="cl1">Adress</td>
+				<td id="inf"><input type="text" name="address"placeholder="ex:Beirut-lebanon"></td>
+			</tr>
+			<tr>
+				<td id="cl1">Phone</td>
+				<td id="inf"><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<td id="cl1">E-mail</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td id="cl1">Blood Group</td>
+				<td id="inf">
+					<select name="bloodgroup">
+						<option value="A+">A+</option>
+						<option value="A-">A-</option>
+						<option value="B+">B+</option>
+						<option value="B-">B-</option>
+						<option value="AB+">AB+</option>
+						<option value="AB-">AB-</option>
+						<option value="O+">O+</option>
+						<option value="O-">O-</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td id="cl1">Unites(required quantity)</td>
+				<td><input type="number" name="requiredquantity"min="1" max="2"placeholder="example:1"></td>
+			</tr>
+			<tr>
+				<td id="cl1">You Need Blood Before</td>
+				<td><input type="date" name="blooddate"></td>
+			</tr>
+			<tr>
+				<td id="cl1">Hospital name</td>
+				<td><input type="text" name="hospitalname"placeholder="ex:AUBMC-Beirut-Hamra"></td>
+			</tr>
+			<tr>
+				<td id="cl1">Hospital Adress</td>
+				<td><input type="text" name="hospitaladress" placeholder="ex:Beirut-Hamra"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" name="submit" value="registration" onclick="test()"> <input type="reset" name="reset" value="clear"></td>
+				
+
+			</tr>
+		</table>
+	</form>
+	<h4>For More Information Contuct Us<a href="About_Us.html" id="connect">Click Here</a></h4> <a href="home.php"><img src="hm.png" align="right" height="50px" width="50px" id="hm"></a> 
+    <a href="home.php"><img src="hm.png" align="right" height="50px" width="50px" id="hm"></a>
+	<script type="text/javascript">
+
+		
+         function test(){
+
+
+
+
+	var fullname=document.getElementById("name").value;
+
+
+
+	alert ("note! \n"+fullname+" if you registred we will contact you As soon!");
+}
+
+	</script>
+</body>
+</html>

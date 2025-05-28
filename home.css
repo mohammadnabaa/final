@@ -1,0 +1,181 @@
+/* Base Reset and Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #fdf2f2, #ffe5e5);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+    background-color: #7f1d1d; /* deep red */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #f8f8f8;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #b91c1c;
+    color: white;
+}
+
+nav ul li a.activate {
+    background-color: #fef2f2;
+    color: #7f1d1d;
+}
+
+nav ul li a.login-button {
+    background-color: #dc2626;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a.login-button:hover {
+    background-color: #b91c1c;
+}
+
+/* Main Table Section */
+table {
+    width: 90%;
+    max-width: 960px;
+    margin: 80px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #7f1d1d;
+    color: #ffffff;
+}
+
+table th, table td {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #fee2e2;
+}
+
+table tr:nth-child(even) {
+    background-color: #fff1f2;
+}
+
+table tr:hover {
+    background-color: #fca5a5;
+}
+
+table td a {
+    background-color: #dc2626;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+table td a:hover {
+    background-color: #b91c1c;
+}
+
+/* Forms (Login/Register) */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #7f1d1d;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    background-color: #dc2626;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #b91c1c;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #7f1d1d;
+    margin: 30px 0 20px;
+}
+
+/* Error Message */
+p.error {
+    text-align: center;
+    color: #dc2626;
+    font-weight: bold;
+}

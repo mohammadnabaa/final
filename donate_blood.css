@@ -1,0 +1,76 @@
+/* General Body Styling */
+body {
+    background-color: #dc2626; /* Strong red */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+/* Headings */
+h2 {
+    color: gold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #b91c1c;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+table th,
+table td {
+    padding: 12px 16px;
+    border: 1px solid #fff;
+}
+
+table th {
+    background-color: #7f1d1d;
+}
+
+table tr:nth-child(even) {
+    background-color: #991b1b;
+}
+
+table tr:hover {
+    background-color: #ef4444;
+    transition: background-color 0.3s;
+}
+
+/* Input Field */
+#donim {
+    width: 80px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+/* Submit Button */
+#sub {
+    background-color: gold;
+    color: red;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sub:hover {
+    background-color: darkorange;
+    color: white;
+}

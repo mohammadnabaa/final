@@ -1,0 +1,99 @@
+body {
+  background-color: #fff5f5; /* Light red background */
+  font-style: normal;
+  font-size: 18px;
+  color: #1f1f1f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #b91c1c; /* Dark red */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Custom Highlight */
+#w, #g {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+/* Button Styles */
+button {
+  background-color: #ef4444; /* Red */
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b91c1c; /* Darker red */
+}
+
+/* Home Icon */
+.home-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+/* Contact Info Box */
+.contact-info {
+  background-color: #ffe4e6; /* very light red */
+  color: #1f1f1f;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(239, 68, 68, 0.1);
+}
+
+/* Social Section */
+.social-links {
+  margin-top: 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.social a {
+  color: #dc2626; /* deep red */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+/* About Content Section */
+.about-content {
+  background-color: #fde2e2;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 6px 12px rgba(239, 68, 68, 0.1);
+}
